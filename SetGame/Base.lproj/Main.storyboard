@@ -1,24 +1,231 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Set Game View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="SetGameViewController" customModule="SetGame" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="90" translatesAutoresizingMaskIntoConstraints="NO" id="7ae-hv-Ibi">
+                                <rect key="frame" x="20" y="44" width="374" height="818"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="0tx-sG-7Ad">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="668"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="hvl-xM-I9l">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="104.5"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CjS-w9-EyX" customClass="SetCardView" customModule="SetGame" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="68.5" height="104.5"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cCM-RP-Cum" customClass="SetCardView" customModule="SetGame" customModuleProvider="target">
+                                                        <rect key="frame" x="76.5" y="0.0" width="68.5" height="104.5"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d0a-u9-t02" customClass="SetCardView" customModule="SetGame" customModuleProvider="target">
+                                                        <rect key="frame" x="153" y="0.0" width="68" height="104.5"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RM3-31-ocI" customClass="SetCardView" customModule="SetGame" customModuleProvider="target">
+                                                        <rect key="frame" x="229" y="0.0" width="68.5" height="104.5"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kn6-5n-RIG" customClass="SetCardView" customModule="SetGame" customModuleProvider="target">
+                                                        <rect key="frame" x="305.5" y="0.0" width="68.5" height="104.5"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="5Mr-II-lvT">
+                                                <rect key="frame" x="0.0" y="112.5" width="374" height="105"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yc2-XG-dul" customClass="SetCardView" customModule="SetGame" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="68.5" height="105"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nyv-5U-xU2" customClass="SetCardView" customModule="SetGame" customModuleProvider="target">
+                                                        <rect key="frame" x="76.5" y="0.0" width="68.5" height="105"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y7p-JE-ggW" customClass="SetCardView" customModule="SetGame" customModuleProvider="target">
+                                                        <rect key="frame" x="153" y="0.0" width="68" height="105"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pHu-4H-UFp" customClass="SetCardView" customModule="SetGame" customModuleProvider="target">
+                                                        <rect key="frame" x="229" y="0.0" width="68.5" height="105"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fmb-An-ukf" customClass="SetCardView" customModule="SetGame" customModuleProvider="target">
+                                                        <rect key="frame" x="305.5" y="0.0" width="68.5" height="105"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="HqN-8Q-Lkk">
+                                                <rect key="frame" x="0.0" y="225.5" width="374" height="104.5"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NSG-PU-RAR" customClass="SetCardView" customModule="SetGame" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="68.5" height="104.5"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pk7-j7-ioP" customClass="SetCardView" customModule="SetGame" customModuleProvider="target">
+                                                        <rect key="frame" x="76.5" y="0.0" width="68.5" height="104.5"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w5t-iU-MFb" customClass="SetCardView" customModule="SetGame" customModuleProvider="target">
+                                                        <rect key="frame" x="153" y="0.0" width="68" height="104.5"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9xa-tc-BCa" customClass="SetCardView" customModule="SetGame" customModuleProvider="target">
+                                                        <rect key="frame" x="229" y="0.0" width="68.5" height="104.5"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MjM-M1-Cv7" customClass="SetCardView" customModule="SetGame" customModuleProvider="target">
+                                                        <rect key="frame" x="305.5" y="0.0" width="68.5" height="104.5"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="fAG-lQ-zXA">
+                                                <rect key="frame" x="0.0" y="338" width="374" height="104.5"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6cB-qM-h2Q" customClass="SetCardView" customModule="SetGame" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="68.5" height="104.5"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="riO-XG-dSg" customClass="SetCardView" customModule="SetGame" customModuleProvider="target">
+                                                        <rect key="frame" x="76.5" y="0.0" width="68.5" height="104.5"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mkb-si-Qfv" customClass="SetCardView" customModule="SetGame" customModuleProvider="target">
+                                                        <rect key="frame" x="153" y="0.0" width="68" height="104.5"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1A7-Km-fvE" customClass="SetCardView" customModule="SetGame" customModuleProvider="target">
+                                                        <rect key="frame" x="229" y="0.0" width="68.5" height="104.5"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P8F-Yp-Syb" customClass="SetCardView" customModule="SetGame" customModuleProvider="target">
+                                                        <rect key="frame" x="305.5" y="0.0" width="68.5" height="104.5"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="DEI-Lg-TlR">
+                                                <rect key="frame" x="0.0" y="450.5" width="374" height="105"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aSX-ZF-so2" customClass="SetCardView" customModule="SetGame" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="68.5" height="105"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LqQ-Pa-Dd1" customClass="SetCardView" customModule="SetGame" customModuleProvider="target">
+                                                        <rect key="frame" x="76.5" y="0.0" width="68.5" height="105"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x6U-O5-z2E" customClass="SetCardView" customModule="SetGame" customModuleProvider="target">
+                                                        <rect key="frame" x="153" y="0.0" width="68" height="105"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xgf-cG-2Ax" customClass="SetCardView" customModule="SetGame" customModuleProvider="target">
+                                                        <rect key="frame" x="229" y="0.0" width="68.5" height="105"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kDH-wO-g4A" customClass="SetCardView" customModule="SetGame" customModuleProvider="target">
+                                                        <rect key="frame" x="305.5" y="0.0" width="68.5" height="105"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="3QQ-fk-RI9">
+                                                <rect key="frame" x="0.0" y="563.5" width="374" height="104.5"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V4R-3z-6Dl" customClass="SetCardView" customModule="SetGame" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="68.5" height="104.5"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eUE-QV-gEv" customClass="SetCardView" customModule="SetGame" customModuleProvider="target">
+                                                        <rect key="frame" x="76.5" y="0.0" width="68.5" height="104.5"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BOb-bx-9b6" customClass="SetCardView" customModule="SetGame" customModuleProvider="target">
+                                                        <rect key="frame" x="153" y="0.0" width="68" height="104.5"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tIn-25-99R" customClass="SetCardView" customModule="SetGame" customModuleProvider="target">
+                                                        <rect key="frame" x="229" y="0.0" width="68.5" height="104.5"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SKI-Hg-hzs" customClass="SetCardView" customModule="SetGame" customModuleProvider="target">
+                                                        <rect key="frame" x="305.5" y="0.0" width="68.5" height="104.5"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="fLG-RE-3Nb">
+                                        <rect key="frame" x="0.0" y="758" width="374" height="60"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m7Q-8v-Fts">
+                                                <rect key="frame" x="0.0" y="0.0" width="183" height="60"/>
+                                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="Deal"/>
+                                                <connections>
+                                                    <action selector="dealCard" destination="BYZ-38-t0r" eventType="touchUpInside" id="aeH-Be-6VH"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 Set" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yui-gd-bLM">
+                                                <rect key="frame" x="191" y="0.0" width="183" height="60"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="7ae-hv-Ibi" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" priority="750" id="2vS-yP-QC8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7ae-hv-Ibi" secondAttribute="trailing" id="ARE-cy-PKb"/>
+                            <constraint firstItem="7ae-hv-Ibi" firstAttribute="top" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" symbolic="YES" id="Ghf-y9-AXh"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="7ae-hv-Ibi" secondAttribute="bottom" priority="750" id="Kqv-mY-DjW"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="7ae-hv-Ibi" secondAttribute="bottom" constant="20" symbolic="YES" id="h1y-0q-MmJ"/>
+                            <constraint firstItem="7ae-hv-Ibi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="o30-x7-vHV"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="dealButton" destination="m7Q-8v-Fts" id="BJi-gl-fvW"/>
+                        <outlet property="setsLabel" destination="yui-gd-bLM" id="YYR-dH-gLX"/>
+                        <outletCollection property="stackViewsOfSetCard" destination="hvl-xM-I9l" collectionClass="NSMutableArray" id="wfI-ke-jDf"/>
+                        <outletCollection property="stackViewsOfSetCard" destination="5Mr-II-lvT" collectionClass="NSMutableArray" id="EL5-Ln-3Tc"/>
+                        <outletCollection property="stackViewsOfSetCard" destination="HqN-8Q-Lkk" collectionClass="NSMutableArray" id="1ny-9G-LDd"/>
+                        <outletCollection property="stackViewsOfSetCard" destination="fAG-lQ-zXA" collectionClass="NSMutableArray" id="kj1-ce-uVJ"/>
+                        <outletCollection property="stackViewsOfSetCard" destination="DEI-Lg-TlR" collectionClass="NSMutableArray" id="JbX-Vu-X6y"/>
+                        <outletCollection property="stackViewsOfSetCard" destination="3QQ-fk-RI9" collectionClass="NSMutableArray" id="hqh-mU-PQK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-130.43478260869566" y="-155.35714285714286"/>
         </scene>
     </scenes>
 </document>
